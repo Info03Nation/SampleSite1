@@ -1,0 +1,38 @@
+<div class ='row'>
+  <div >
+  <h5
+    style ='color:rgb(120,120,50); margin-bottom:4px;''>
+  {{dt['Title']}}
+</h5>
+
+
+<div align="left">
+  <b> Description:</b>
+    {{dt['Description']}}
+
+<!-- </div>
+{% if 'URL' in dt %}
+<div align="justify">
+<b> URL:</b>
+  {{dt['URL']}} -->
+  
+
+<!-- </div>
+  {% endif %} -->
+   {% if 'URL' in dt %}
+  
+  </div>
+    <div align="justify" >
+     
+      <!-- <a href="{{dt['URL']}}" target="_blank"> -->
+      <a href="{{dt['URL']}}" type="button" class="btn btn-outline-secondary" style="margin-top:5px;">
+        See More
+      </a>
+      <br/>
+      <hr>
+    
+      </div>
+    {% endif %}
+    
+
+</div>
