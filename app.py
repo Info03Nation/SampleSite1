@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jasonify
+from flask import Flask, render_template, jsonify
 app = Flask(__name__)
 
 DATA = [
@@ -47,7 +47,7 @@ def hello_world():
 
 @app.route("/api/data")
 def list_jobs():
-  return jasonify(DATA)  
+  return jsonify(DATA)  
 # print(__name__)
 if __name__ == "__main__":
   app.run(host = "0.0.0.0", debug = True)
