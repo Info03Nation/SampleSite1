@@ -41,13 +41,28 @@ DATA = [
   
 ]
 
+FORM =[
+  {
+  'id':1,
+  'Name': '<name>'
+  }
+]
+
 @app.route("/")
 def hello_world():
   return render_template('Home.html', data = DATA)
 
+@app.route("/")
+def form_type():
+  return render_template('Home.html', form = FORM)
+
 @app.route("/api/data")
 def list_content():
   return jsonify(DATA)  
+
+@app.route("/api/data")
+def form_content():
+  return jsonify(FORM)  
 # print(__name__)
 if __name__ == "__main__":
   app.run(host = "0.0.0.0", debug = True)

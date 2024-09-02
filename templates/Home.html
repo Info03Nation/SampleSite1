@@ -93,6 +93,7 @@
             flex-direction: column;
           }
         }
+        hr { background-color:white; height: 2px; border: 0; }
         
       </style>
     
@@ -100,7 +101,7 @@
   <div id ='container'>
     
   
-  <body style="background-image: url('https://f9c922cd-2145-4129-a114-4249093d3dee-00-hgig41wjoba0.sisko.replit.dev/static/background.jpeg');
+  <body style="background-image: url('https://612e1d1a-c750-459d-8cea-92428c6db771-00-80kfppddox2t.sisko.replit.dev/static/banner.jpeg');
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
@@ -111,9 +112,9 @@
     
      
   <h1>
-    <img id='contact'  src = 'https://f9c922cd-2145-4129-a114-4249093d3dee-00-hgig41wjoba0.sisko.replit.dev/static/contact.jpeg' height = '70'' > 
+    <img id='contact'  src = 'https://612e1d1a-c750-459d-8cea-92428c6db771-00-80kfppddox2t.sisko.replit.dev/static/contact.jpeg' height = '70'' > 
     </h1>
-    <!-- <img src = 'https://f9c922cd-2145-4129-a114-4249093d3dee-00-hgig41wjoba0.sisko.replit.dev/static/banner.jpeg' height = '70''>  -->
+    <!-- <img src = 'https://612e1d1a-c750-459d-8cea-92428c6db771-00-80kfppddox2t.sisko.replit.dev/static/banner.jpeg' height = '70''>  -->
   
     {% include 'navbar.html'%}
     
@@ -129,7 +130,7 @@
         <ul>
           <!-- home button  -->
           
-          <li> <button  type="button" class="btn btn-success" style="background-color: rgba(18,14,9,0.4); border:           rgba(18,13,9.0.4); writing-mode: rtl;
+          <li> <button  type="button" class="btn btn-success" style="background-color: rgba(18,14,9,0.4); border:rgba(18,13,9.0.4); writing-mode: rtl;
                  align: right;
                 width: 150px;
                 font-size: 20px;
@@ -216,27 +217,37 @@
 
     
     <br/>
+    <div style="background-color:lightgray;color:lightgray"><br/><p></p></div>
     <br/>
 
-    
-    <hr>
-    <hr>
 
     
-      
+     <div class='row' style="background-color: #777"> 
     
-    <h3 class='text-center'> About us </h3>
-      <p> TODO - show the section here </p>
-      <button type = "button" class="btn btn-primary" style = "font-size:14; font-family: Arial, Helvetica, sans-serif;
+    <h3 class='text-center' style='text-decoration-color: rgba(10,9,8.1);
+      font-family: roboto'> About us </h3>
+      <p > TODO - show the section here </p>
+       <p>
+
+       <!-- {% for frm in form %}
+
+       {% include 'form.html' %}
+
+       {% endfor %} -->
+        
+        </p>
+       <div class='col-3'
+          <button  type = "button" class="btn btn-primary" style = "font-size:14; font-family:Arial, Helvetica, sans-serif;
         background-color:rgba(18,13,8,0.3);
-        writing-mode: rtl;
-        button-size: 70px;
-        border-right-width: thin;
-        border-bottom-width: thin;
         border-inline-start: 12px solid green;
         border-end-end-radius: 15px">
+           <a href="mailto:info.nation.03@gmail.com?subject=Contacted%20by:&body=hey%20just%20want%20to%20contact:" style="color:black">
         Contact Us 
-      </button>
+              </a>
+          </button>
+       
+     </div>
+  </div>
 
    
     
