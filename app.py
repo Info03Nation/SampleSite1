@@ -46,7 +46,7 @@ def hello_world():
   return render_template('Home.html', data = DATA)
 
 @app.route("/api/data")
-def list_jobs():
+def list_content():
   return jsonify(DATA)  
 # print(__name__)
 if __name__ == "__main__":
